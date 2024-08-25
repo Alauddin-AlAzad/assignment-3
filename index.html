@@ -47,12 +47,12 @@
                 <!-- sub-menu -->
                 <div class="navbar-center hidden lg:flex pt-2 ">
                     <ul class="menu menu-horizontal px-1 text-[#737373]   ">
-                        <li class=" hover:text-black hover:font-extrabold duration-300 ease-in-out"><a>Home</a></li>
-                        <li class=" hover:text-black hover:font-extrabold duration-300 ease-in-out"><a>Services</a></li>
-                        <li class=" hover:text-black hover:font-extrabold duration-300 ease-in-out"><a>Portfolio</a>
+                        <li class=" hover:text-black hover:font-extrabold duration-300 ease-in-out"><a href="#home">Home</a></li>
+                        <li class=" hover:text-black hover:font-extrabold duration-300 ease-in-out"><a href="#service">Services</a></li>
+                        <li class=" hover:text-black hover:font-extrabold duration-300 ease-in-out"><a href="#portfolio">Portfolio</a>
                         </li>
-                        <li class=" hover:text-black hover:font-extrabold duration-300 ease-in-out"><a>Blogs</a></li>
-                        <li class=" hover:text-black hover:font-extrabold duration-300 ease-in-out"><a>Contact us</a>
+                        <li class=" hover:text-black hover:font-extrabold duration-300 ease-in-out"><a href="#blog">Blogs</a></li>
+                        <li class=" hover:text-black hover:font-extrabold duration-300 ease-in-out"><a href="#contact">Contact us</a>
                         </li>
                     </ul>
                 </div>
@@ -72,11 +72,12 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute -left-36">
-                        <li><a>Services</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact us</a></li>
-                        <li><a>Home</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="blog">Blogs</a></li>
+                        <li><a href="contact">Contact us</a></li>
+                        
 
                     </ul>
                 </div>
@@ -84,7 +85,7 @@
         </nav>
         <!-- Banner section here -->
         <section
-            class="md:container mx-auto flex flex-col  items-center px-5 my-8 lg:mt[56px] lg:mb-[120px] mb-[40px] ">
+           id="home" class="md:container mx-auto flex flex-col  items-center px-5 my-8 lg:mt[56px] lg:mb-[120px] mb-[40px] ">
             <!-- image-here -->
             <div class=" ">
                 <img class="w-full px-8" src="./assets/banner.png" alt="">
@@ -157,7 +158,7 @@
             </div>
         </section>
         <!-- work process section  -->
-        <section class="w-full mx-auto bg-[#F4F4F4] lg:mb-[120px] mb-[40px]  ">
+        <section id="service" class="w-full mx-auto bg-[#F4F4F4] lg:mb-[120px] mb-[40px]  ">
             <div class="md:container mx-auto">
                 <!-- text-here -->
                 <div class="text-center space-y-6 py-8 w-[90%] mx-auto">
@@ -205,7 +206,7 @@
             </div>
         </section>
         <!-- portfolio section -->
-        <section class="md:container mx-auto lg:mb-[100px] mb-10">
+        <section id="portfolio" class="md:container mx-auto lg:mb-[100px] mb-10">
             <!-- text-here -->
             <div class="text-center space-y-6 py-8 w-[90%] mx-auto">
                 <button class="btn px-4 py-2 font-bold bg-as-bg-secondery rounded-3xl"> <i
@@ -230,7 +231,7 @@
                 </div>
                 <div class="lg:col-span-4 col-span-12 border border-[#E9E9E9] rounded-2xl  ">
                     <img class=" lg:w-[90%] lg:h-[78%] lg:ml-6 lg:mt-6 hidden lg:block " src="./assets/img2.png" alt="">
-                    <img class="w-full h-fu p-6 lg:hidden" src="assets/img2.png" alt="">
+                    <img class="w-full  p-6 lg:hidden" src="assets/img2.png" alt="">
                 </div>
                 <div></div>
                 
@@ -238,7 +239,7 @@
             <!--  -->
             <div class="grid grid-cols-10 gap-6 w-[90%] mx-auto ">
                 <div class="lg:col-span-2 col-span-10 border rounded-2xl p-6">
-                    <img class=" w-full " src="assets/img3.png" alt="">
+                    <img class=" w-full h-full " src="assets/img5.png" alt="">
                 </div>
                  <div class="lg:col-span-6 col-span-10 border rounded-2xl flex flex-col lg:flex-row gap-6 p-6">
                     <img src="assets/img4.png" alt="">
@@ -250,12 +251,17 @@
                     </div>
                 </div> 
                 <div class="lg:col-span-2 col-span-10 border rounded-2xl p-6">
-                    <img class=" w-full " src="assets/img5.png" alt="">
+                    <img class=" w-full h-full" src="assets/img3.png" alt="">
                 </div>
             </div>
+            <!-- for small device -->
+             <div class="border w-[90%] mx-auto mt-6 rounded-2xl md:hidden">
+                <img src="./assets/img5.png" alt="" class="p-6 w-full">
+             </div>
+          
         </section>
         <!-- challenge section -->
-         <section class="bg-[#F4F4F4] lg:mt-24 lg:mb-24 mb-8 mt-8 ">
+         <section id="blog" class="bg-[#F4F4F4] lg:mt-24 lg:mb-24 mb-8 mt-8 ">
                 <div class="text-center space-y-6 py-8 w-[90%] mx-auto lg:mb-10 mb-8 ">
                     <button class="btn px-4 py-2 font-bold bg-as-bg-secondery rounded-3xl"> <i
                             class="fa-solid fa-arrow-right"></i>Client Question</button>
@@ -267,7 +273,7 @@
                 <!-- faq here -->
                  <div class="grid lg:grid-cols-3 grid-cols-1 lg:w-[1170px] mx-auto gap-8 lg:pb-20 w-[90%]">
                      <div >
-                        <img src="assets/faq.png" alt="" class="col-span-1 h-full">
+                        <img src="assets/faq.png" alt="" class="col-span-1 h-full shadow-lg rounded-lg">
                      </div>
                      <!-- faq -->
                      <div class="col-span-2  ">
@@ -313,7 +319,7 @@
             
          </section>
         <!-- form style here -->
-         <section style="background-image: url(./assets/bg.jpg); background-size: cover;" class="w-full ">
+         <section id="contact" style="background-image: url(./assets/bg.jpg); background-size: cover;" class="w-full ">
             <!-- text-here -->
             <div class="text-center space-y-6 py-8 w-[90%] mx-auto">
                 <button class="btn px-4 py-2 font-bold bg-as-bg-secondery rounded-3xl"> <i
@@ -326,9 +332,9 @@
              <div class="max-w-[1170px] mx-auto">
                 <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:w-full w-[90%] mx-auto">
                  <input type="text" placeholder="First Name*" class="p-4 rounded-full font-medium text-[#A0A0A0] outline-none">
-                 <input type="text" placeholder="First Name*" class="p-4 rounded-full font-medium text-[#A0A0A0] outline-none">
-                 <input type="text" placeholder="First Name*" class="p-4 rounded-full font-medium text-[#A0A0A0] outline-none">
-                 <input type="text" placeholder="First Name*" class="p-4 rounded-full font-medium text-[#A0A0A0] outline-none">
+                 <input type="text" placeholder="Last Name*" class="p-4 rounded-full font-medium text-[#A0A0A0] outline-none">
+                 <input type="text" placeholder="Phone Number*" class="p-4 rounded-full font-medium text-[#A0A0A0] outline-none">
+                 <input type="text" placeholder="Email Number*" class="p-4 rounded-full font-medium text-[#A0A0A0] outline-none">
                 
                 </div>
                 <div class="w-[90%] lg:w-full mx-auto grid grid-cols-1 lg:pb-24 pb-8">
@@ -342,8 +348,30 @@
 
     </main>
     <!-- footer here -->
-    <footer>
+    <footer class="w-full bg-black lg:pb-[100px] pb-[72px]">
+        <div class="text-center w-[90%] mx-auto flex flex-col  items-center lg:pt-[100px] pt-[72px] pb-[32px]">
+            <div class=" flex flex-row gap-1  ">
+                <i class="fa-solid fa-arrow-right bg-as-bg-primary p-2 rounded-full shadow-lg h-8 w-8 mt-2 -rotate-45  "></i>
+                <h2 class=" lg:text-[32px] text-[28px] font-extrabold text-white ] ">Rinterio </h2>
+            </div>
+            <p class="text-[#737373]"> <br>The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <!--  -->
+        <div class="text-[#E9E9E9] flex lg:flex-row flex-col gap-8 lg:gap-[120px] justify-center items-center pb-8 lg:pb-[48px] ">
+            <a href="#home"><p class="hover:font-bold duration-200 ease-in-out  cursor-pointer"> Home</p></a>
+            <a href="#service"><p class="hover:font-bold duration-200 ease-in-out  cursor-pointer">Services</p></a>
+            <a href="#portfolio"><p class="hover:font-bold duration-200 ease-in-out  cursor-pointer">portfolio</p></a>
+            <a href="#blog"><p class="hover:font-bold duration-200 ease-in-out  cursor-pointer">Blogs</p></a>
+            <a href="#contact"><p class="hover:font-bold duration-200 ease-in-out  cursor-pointer">Contact us</p></a>
+        </div>
+        <div class="text-center">
+           
+            <a class="btn text-xl font-extrabold bg-as-bg-primary rounded-3xl border-none lg:max-w-[211px] w-[90%]   ">Book Consult <i
+                class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 -rotate-45"></i></a>
+           
+        </div>
 
+            
     </footer>
 </body>
 
